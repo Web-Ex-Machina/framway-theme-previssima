@@ -1,5 +1,5 @@
 module.exports = {
-	'spacing': '15px',
+	'spacing': '30px',
 	'radius': '5px',
 	'colors': {
 		'green':      '#5cb85c',
@@ -17,6 +17,9 @@ module.exports = {
 		'greySep':    '#d3d3d3',
 		'greystrong': '#707070',
 	},
+	'primary': 'colors(blue)',
+	'secondary': 'adjust-color(primary,$hue: 180deg)',
+
 
 	'body':{
 		'background':       'colors(greylight)',
@@ -29,10 +32,27 @@ module.exports = {
 		'border-color':       'colors(greySep)',
 	},
 	'input-focus':{
-		'background':       'colors(none)',
+		'background':       'colors(white)',
 		'border-color':       'colors(blue)',
 	},
 	'header':{
 		'font-color':       'colors(grey)',
 	},
+
+	'link': {
+		'font-color': 'primary',
+		'font-color-hover': 'primary',
+		'font-color-focus': 'primary',
+		'underline': true,
+		'underline-on-hover': false,
+	},
+	'btn':{
+		'background': 'primary',
+		'font-color': 'contrastFW(colors(white),primary)',
+		'border-size': '2px',
+		'radius': true,
+		'uppercase': true,
+		'font-weight': 400,
+	},
+	'griditem-minwidth': '25ch',
 };
